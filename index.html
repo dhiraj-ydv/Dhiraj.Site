@@ -10,7 +10,7 @@
 
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 60px;
+	scroll-padding-top: var(--scroll-padding, 47px);
 }
 
 .sec1 {
@@ -189,4 +189,9 @@ html {
 
 
 </body>
+	<script>
+const navigationHeight = document.querySelector('.navbar').offsetHeight;
+//console.log(navigationHeight);
+document.documentElement.style.setProperty('--scroll-padding', navigationHeight - 1 + "px");
+</script>
 </html>
