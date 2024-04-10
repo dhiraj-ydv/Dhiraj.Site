@@ -1,0 +1,146 @@
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--scroll-padding, 47px);
+}
+
+body {
+            margin: 0;
+	     /*touch-action: pan-y;*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+.sec1 {
+  height: 800px;
+  background-color: powderblue;
+  line-height: 800px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+		}
+	
+		span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-family: "Comforter Brush", cursive;
+}
+
+	@media (max-width: 768px) {
+    .sec1 {
+        height: 100%;
+        line-height: 5.5; /* Example line height for better spacing */
+    }
+}
+	
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.sec2 {
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+	margin: 0px 10px;
+  padding: 0px 4px;
+		}
+
+		.sec3 {
+  height: 300px;
+  background-color: rgb(240, 240, 240);
+			margin: 0px 10px;
+  padding: 0px 4px;
+		}
+
+		.sec4 {
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+			margin: 0px 10px;
+  padding: 0px 4px;
+		}
+
+		.sec5 {
+  height: 300px;
+  background-color: rgb(240, 240, 240);
+			margin: 0px 10px 10px 10px;
+  padding: 0px 4px;
+		}
+
+		.content {
+  max-width: 1100px;
+  margin: auto;
+  background: rgb(248,248,248;
+  padding: 10px;
+		}
+
+
+
+        .toggle-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background: #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dark-mode-switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-mode-switch:checked + label {
+  background: #444;
+}
+
+.sun, .moon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.sun {
+  clip-path: circle(50% at 50%);
+}
+
+.moon {
+  clip-path: circle(40% at 20%);
+  fill: #222;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode-switch:checked + label .sun {
+  transform: translateX(100%);
+}
+
+.dark-mode-switch:checked + label .moon {
+  transform: translateX(-100%);
+}
