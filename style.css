@@ -50,7 +50,7 @@ html {
 /* Section styles */
 .sec1 {
   height: 100vh; /* Full viewport height */
-  background-color: #4CAF50;
+  background: linear-gradient(to right, #43cea2, #185a9d);
   color: white;
   display: flex;
   justify-content: center;
@@ -60,6 +60,30 @@ html {
   font-family: 'Comforter Brush', cursive;
   text-align: center;
   overflow: hidden; /* Prevents any overflow */
+  position: relative;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.sec1 span {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .sec2, .sec3, .sec4, .sec5 {
@@ -112,6 +136,7 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
