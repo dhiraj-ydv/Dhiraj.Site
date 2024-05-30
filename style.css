@@ -20,6 +20,22 @@ html {
     line-height: 1.6;
     font-size: 40px;
   }
+
+  .navbar .nav-links a {
+    font-size: 0; /* Hide text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar .nav-links a i {
+    font-size: 24px; /* Show icons */
+    margin-right: 0;
+  }
+
+  .navbar .nav-links a .link-text {
+    display: none; /* Hide text */
+  }
 }
 
 /* Navbar styles */
