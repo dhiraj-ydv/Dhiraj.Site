@@ -37,7 +37,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 10px 20px; /* Added padding: 10px top and bottom, 20px left and right */
 }
 
 .navbar .logo {
@@ -58,7 +58,7 @@ html {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  padding-right: 24px; /* Add padding on the left side */
+  padding-right: 24px;
 }
 
 .navbar .nav-links a:hover {
