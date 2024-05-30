@@ -30,19 +30,34 @@ html {
   top: 0;
   width: 100%;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
-.navbar a {
-  float: left;
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  display: flex;
+}
+
+.navbar .nav-links a {
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  padding-right: 24px; /* Add padding on the left side */
 }
 
-.navbar a:hover {
+.navbar .nav-links a:hover {
   background: #ddd;
   color: black;
 }
