@@ -212,7 +212,7 @@ form button:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .social-links a {
