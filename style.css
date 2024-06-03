@@ -24,6 +24,20 @@ html {
   .navbar .nav-links {
     display: none !important;
   }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-links a {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+
+  .social-links br {
+    display: none; /* Hide the <br> on larger screens */
+  }
 }
 
 /* Navbar styles */
