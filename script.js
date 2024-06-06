@@ -14,25 +14,24 @@ if ('serviceWorker' in navigator) {
 
 //for form data submission to database
 $(document).ready(function() {
-            $('#contactForm').on('submit', function(event) {
-                event.preventDefault();
-                const name = $('#name').val();
-                const email = $('#email').val();
-                const message = $('#message').val();
+        $('#contactForm').on('submit', function(event) {
+            event.preventDefault();
+            const name = $('#name').val();
+            const email = $('#email').val();
+            const message = $('#message').val();
 
-                $.ajax({
-                    url: '/submit',
-                    method: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify({ name: name, email: email, message: message }),
-                    success: function(response) {
-                        $('#result').text('Form submitted successfully!');
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error:', error);
-                        $('#result').text('Form submission failed.');
-                    }
-                });
+            $.ajax({
+                url: '/submit',
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ name: name, email: email, message: message }),
+                success: function(response) {
+                    $('#result').text('Form submitted successfully!');
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', error);
+                    $('#result').text('Form submission failed.');
+                }
             });
         });
-
+    });
