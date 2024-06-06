@@ -13,6 +13,7 @@ if ('serviceWorker' in navigator) {
 }
 
 //for form data submission to database
+/*
 $(document).ready(function() {
         $('#contactForm').on('submit', function(event) {
             event.preventDefault();
@@ -35,3 +36,4 @@ $(document).ready(function() {
             });
         });
     });
+*/
