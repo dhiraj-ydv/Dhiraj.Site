@@ -240,3 +240,13 @@ form button:hover {
 .social-links a:hover {
   color: #ffc107;
 }
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Add underline on hover */
+a:hover {
+    text-decoration: underline;
+}
