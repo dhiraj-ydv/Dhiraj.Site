@@ -246,7 +246,12 @@ a {
     text-decoration: none;
 }
 
-/* Add underline on hover */
-a:hover {
-    text-decoration: underline;
+/* visited link */
+a:visited {
+  color: none;
 }
+
+/* selected link */
+a:active {
+  text-decoration: underline;
+} 
